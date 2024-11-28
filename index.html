@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <!-- Navbar -->
+    <aside class="navbar">
+      <div class="logo">SECURESIGHT AI</div>
+      <nav>
+        <ul>
+          <li>Mission Control</li>
+          <li>Activate / Deactivate</li>
+          <li>Live Video Feed</li>
+          <li>Scheduling</li>
+          <li>System Check</li>
+          <li>Device Settings</li>
+        </ul>
+      </nav>
+      <div class="house-alarm">
+        <p>House Alarm</p>
+        <label class="toggle-switch">
+          <input type="checkbox" id="alarm-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>      
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- House Diagram -->
+      <section class="house-diagram">
+        <div class="house">
+          <img src="assert/image-Photoroom.png" alt="House Image">
+        </div>
+<div class="button-container"><button type="button" class="bot">Chatbot</button>
+    <button type="button" class="backend-btn" onclick="window.location.href='/live_video_feed';">Go to Live Video Feed</button>
+</div>
+
+ 
+</section>
+
+     
+
+      <!-- Status Bar -->
+      <section class="status-bar">
+        <div class="status-item">
+          <div class="icon"><img src="assert/window.png" width="72" height="72"> </div>
+          <p>Windows<br><span>2 Secure</span></p>
+        </div>
+        <div class="status-item">
+          <div class="icon"><img src="assert/sensor.png" width="72" height="72"></div>
+          <p>Sensors<br><span>No Activation</span></p>
+        </div>
+        <div class="status-item">
+          <div class="icon"><img src="assert/camera.png" width="72" height="72"></div>
+          <p>Camera<br><span>Photo Library</span></p>
+        </div>         
+      </section>
+    </main>
+    <script>
+        // Live Video Feed - Redirect to Face Detection page
+        function redirectToLiveFeed() {
+          window.location.href = "live_video_feed.html"; // Redirects to a new page
+        }
+      </script>
+</body>
+</html>

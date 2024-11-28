@@ -1,0 +1,210 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111827;
+    color: #e5e7eb;
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Layout */
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 20%;
+    background-color: #1f2937;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #22d3ee;
+    margin-bottom: 20px;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+  }
+  
+  .navbar nav ul li {
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .navbar nav ul li:hover {
+    color: #22d3ee;
+  }
+  
+  .house-alarm {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .house-alarm p {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .alarm-off {
+    background-color: #ef4444;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .alarm-off:hover {
+    background-color: #dc2626;
+  }
+  
+  /* Main Content */
+  .main-content {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  /* House Diagram */
+  .house-diagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .house {
+    width: 70%;
+    border: 2px solid #22d3ee;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .attic {
+    text-align: center;
+  }
+  
+  .rooms {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lower-rooms {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nursery.active {
+    background-color: #22d3ee;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .garage {
+    width: 20%;
+    border: 2px solid #22d3ee;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* Status Bar */
+  .status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f2937;
+    border-radius: 10px;
+  }
+  
+  .status-item {
+    text-align: center;
+    color: #22d3ee;
+  }
+  
+  .status-item p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .status-item span {
+    color: #e5e7eb;
+    font-size: 12px;
+  }
+/* Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  #22c55e; /* Default color (Off) */
+    transition: 0.4s;
+    border-radius: 25px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #ef4444; /* Color when turned On */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(25px);
+  }
+.bot,.backend-btn{
+    background-color: #22d3ee;
+    padding: 15px 32px;
+  text-align: center;
+  width: 250px;
+  border-radius: 15px;
+}
+.button-container {
+    display: grid;
+    gap: 25px;  /* Adds space between the buttons */
+    margin-top: 20px; /* Adds some space from the image */
+  }
